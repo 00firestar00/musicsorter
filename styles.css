@@ -1,0 +1,13 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    color: #5b17ba;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #945ce3;
+}

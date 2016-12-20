@@ -87,7 +87,6 @@ function loadPicks() {
 
     Round++;
     document.getElementById("round").innerHTML = "Round: " + Round;
-    document.getElementById("sorted").innerHTML = "Sorted: " + Math.floor(Sorted.length / Total);
     console.log("ROUND " + Round + "!\n" + Alpha.name + " VS " + Beta.name);
 
     if ((isIgnored(Alpha)) != -1) {
@@ -100,7 +99,6 @@ function loadPicks() {
         console.log(Beta.name + " is ignored, " + Alpha.name + " wins automatically.");
         alpha_selector.trigger("click");
     }
-
 }
 
 function init() {

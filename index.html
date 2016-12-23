@@ -29,55 +29,58 @@
 
     <main class="mdl-layout__content mdl-color--grey-100">
         <div class="page-content">
-            <section id="docs" class="mdl-layout__tab-panel">
-                <div class="section--center mdl-grid mdl-typography--text-center">
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-                    <div class="mdl-cell mdl-cell--8-col">Note: There are over 250 songs in this list, it may take awhile...</div>
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-                    <div class="mdl-cell mdl-cell--8-col">
-                        <div class="mdl-card mdl-grid mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-                            <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text">
-                                <h3 id="round">Round 1</h3>
-                                <h3 id="subtitle"></h3>
-                            </div>
-                            <div class="mdl-cell mdl-cell--5-col">
-                                <button id="alpha-btn" class="video_btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                    Alpha
-                                </button>
-                                <br><br><br>
-                                <div id="alpha-vid"></div>
-                            </div>
-                            <div class="mdl-cell mdl-cell--2-col">
-                                <button id="ignorebtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                                    Skip
-                                </button>
-                            </div>
-                            <div class="mdl-cell mdl-cell--5-col">
-                                <button id="beta-btn" class="video_btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                    Beta
-                                </button>
-                                <br><br><br>
-                                <div id="beta-vid"></div>
-                            </div>
+            <div class="section--center mdl-grid mdl-cell--8-col mdl-typography--text-center">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-card__supporting-text  mdl-shadow--4dp">
+                        Note: There are over 290 songs in this list, it may take awhile...
+                        <h3 id="round">Round 1</h3>
+                        <h3 id="subtitle"></h3>
+                    </div>
+                </div>
+                <div id="vid-group" class="mdl-grid mdl-cell mdl-cell--12-col">
+                    <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp">
+                        <div class="mdl-card__title">
+                            <div id="alpha-vid"></div>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a id="alpha-btn" class="video_btn mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Alpha
+                            </a>
+                            <br><br>
+                            <a id="alpha-ignore"
+                               class="ignore_btn mdl-button mdl-button--raised mdl-button--colored mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+                                Remove
+                            </a>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-                    <div class="mdl-cell mdl-cell--2-col"></div>
-                    <div class="mdl-cell mdl-cell--8-col">
-                        <div class="mdl-card mdl-grid mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-                            <div id="losers">
-                            </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp">
+                        <div class="mdl-card__title">
+                            <div id="beta-vid"></div>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a id="beta-btn" class="video_btn mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Beta
+                            </a>
+                            <br><br>
+                            <a id="beta-ignore"
+                               class="ignore_btn mdl-button mdl-button--raised mdl-button--colored mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+                                Remove
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div id="final-list" class="mdl-cell mdl-cell--12-col" style="display: none">
+                    <div class="mdl-card mdl-grid mdl-cell mdl-cell--12-col mdl-shadow--4dp">
+                        <ul id="losers" class="demo-list-item mdl-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </div>
 
 <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script charset="utf-8" src="data.js"></script>
 <script charset="utf-8" src="sorter.js"></script>
 </body>

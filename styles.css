@@ -22,3 +22,16 @@ iframe {
     margin-left: auto;
     margin-right: auto;
 }
+
+.video_btn {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ignore_btn {
+    float: right;
+}
+
+#vid-group {
+    padding: 0;
+}
